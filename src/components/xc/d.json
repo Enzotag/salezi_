@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_xc_ds",
+  "info": {
+    "displayName": "d"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

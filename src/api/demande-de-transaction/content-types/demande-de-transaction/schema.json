@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "demande_de_transactions",
+  "info": {
+    "singularName": "demande-de-transaction",
+    "pluralName": "demande-de-transactions",
+    "displayName": "Demande de transaction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Demande": {
+      "type": "enumeration",
+      "enum": [
+        "Ajouter",
+        "Retirer"
+      ]
+    },
+    "article_lyon": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "inversedBy": "demande_de_transaction"
+    },
+    "Statue": {
+      "type": "enumeration",
+      "enum": [
+        "En Attente",
+        "Approuver"
+      ]
+    }
+  }
+}

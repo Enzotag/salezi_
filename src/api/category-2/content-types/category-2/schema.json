@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_2s",
+  "info": {
+    "singularName": "category-2",
+    "pluralName": "category-2s",
+    "displayName": "Category Annecy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "article_2": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article-2.article-2",
+      "mappedBy": "Category_2"
+    }
+  }
+}
